@@ -13,9 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (navMenu.classList.contains('active')) {
             icon.classList.remove('ph-list');
             icon.classList.add('ph-x');
+            document.body.style.overflow = 'hidden';
         } else {
             icon.classList.remove('ph-x');
             icon.classList.add('ph-list');
+            document.body.style.overflow = '';
         }
     });
 
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.remove('active');
             icon.classList.remove('ph-x');
             icon.classList.add('ph-list');
+            document.body.style.overflow = '';
         });
     });
 
