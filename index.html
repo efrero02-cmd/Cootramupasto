@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="COOTRAMUPASTO - Cooperativa financiera sólida y confiable. Ofrecemos servicios de ahorro, crédito y múltiples beneficios para nuestros asociados.">
+    <title>COOTRAMUPASTO | Cooperativa de Ahorro y Crédito</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.png" alt="COOTRAMUPASTO Logo" class="logo-img">
+                <span class="logo-text">COOTRAMUPASTO</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#benefits" class="nav-link">Beneficios</a></li>
+                    <li><a href="#news" class="nav-link">Noticias</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline">Asociarse</a>
+                <a href="#" class="btn btn-primary">Sucursal Virtual</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-background">
+                <img src="./assets/images/hero.png" alt="Oficina de Cootramupasto">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 class="fade-up">Construimos juntos un <span class="highlight">futuro sólido</span></h1>
+                <p class="hero-subtitle fade-up" style="animation-delay: 0.2s;">
+                    Confianza, innovación y solidez financiera a su servicio. Más de 20 años impulsando los sueños de
+                    nuestros asociados.
+                </p>
+                <div class="hero-buttons fade-up" style="animation-delay: 0.4s;">
+                    <a href="#services" class="btn btn-primary btn-lg">Conocer Servicios <i
+                            class="ph ph-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-glass btn-lg">Hablar con un asesor</a>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3 class="counter" data-target="900">0</h3>
+                    <p>Asociados Activos</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="counter" data-target="43">0</h3>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="counter" data-target="1">0</h3>
+                    <p>Sucursales en el país</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge">Nuestra Esencia</span>
+                    <h2>Sobre la Cooperativa</h2>
+                    <p>Una institución fundamentada en valores, diseñada para hacer crecer su patrimonio.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card reveal">
+                        <div class="icon-wrapper">
+                            <i class="ph ph-book-open-text"></i>
+                        </div>
+                        <h3>Nuestra Historia</h3>
+                        <p>Nacimos del esfuerzo conjunto para brindar soluciones financieras reales, transparentes y
+                            accesibles para toda la comunidad.</p>
+                    </div>
+                    <div class="about-card reveal" style="transition-delay: 0.1s;">
+                        <div class="icon-wrapper">
+                            <i class="ph ph-target"></i>
+                        </div>
+                        <h3>Misión</h3>
+                        <p>Mejorar la calidad de vida de nuestros asociados mediante servicios financieros competitivos
+                            e integrales, promoviendo el ahorro solidario.</p>
+                    </div>
+                    <div class="about-card reveal" style="transition-delay: 0.2s;">
+                        <div class="icon-wrapper">
+                            <i class="ph ph-eye"></i>
+                        </div>
+                        <h3>Visión</h3>
+                        <p>Ser reconocidos a nivel nacional como la cooperativa líder en innovación, solidez y
+                            responsabilidad social empresarial para el año 2030.</p>
+                    </div>
+                    <div class="about-card reveal" style="transition-delay: 0.3s;">
+                        <div class="icon-wrapper">
+                            <i class="ph ph-handshake"></i>
+                        </div>
+                        <h3>Valores</h3>
+                        <ul class="values-list">
+                            <li><i class="ph-fill ph-check-circle"></i> Transparencia</li>
+                            <li><i class="ph-fill ph-check-circle"></i> Solidaridad</li>
+                            <li><i class="ph-fill ph-check-circle"></i> Innovación</li>
+                            <li><i class="ph-fill ph-check-circle"></i> Cercanía</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge">Portafolio</span>
+                    <h2>Nuestros Servicios</h2>
+                    <p>Soluciones financieras diseñadas a tu medida con las mejores tasas del mercado.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <i class="ph ph-piggy-bank"></i>
+                        </div>
+                        <h3>Ahorro Programado</h3>
+                        <p>Asegura tu futuro y el de tu familia con rentabilidades atractivas y total seguridad para tu
+                            dinero.</p>
+                        <a href="#" class="btn-link">Saber más <i class="ph ph-caret-right"></i></a>
+                    </div>
+
+                    <div class="service-card reveal" style="transition-delay: 0.1s;">
+                        <div class="service-icon">
+                            <i class="ph ph-wallet"></i>
+                        </div>
+                        <h3>Crédito de Libre Inversión</h3>
+                        <p>Financia tus proyectos personales con tasas competitivas y rápida aprobación.</p>
+                        <a href="#" class="btn-link">Saber más <i class="ph ph-caret-right"></i></a>
+                    </div>
+
+                    <div class="service-card reveal" style="transition-delay: 0.2s;">
+                        <div class="service-icon">
+                            <i class="ph ph-house-line"></i>
+                        </div>
+                        <h3>Crédito Hipotecario</h3>
+                        <p>El sueño de tener casa propia es posible. Te acompañamos en cada paso con las mejores
+                            condiciones.</p>
+                        <a href="#" class="btn-link">Saber más <i class="ph ph-caret-right"></i></a>
+                    </div>
+
+                    <div class="service-card reveal" style="transition-delay: 0.3s;">
+                        <div class="service-icon">
+                            <i class="ph ph-graduation-cap"></i>
+                        </div>
+                        <h3>Crédito Educativo</h3>
+                        <p>Invierte en tu formación profesional o la de tus hijos con tasas de interés preferenciales.
+                        </p>
+                        <a href="#" class="btn-link">Saber más <i class="ph ph-caret-right"></i></a>
+                    </div>
+
+                    <div class="service-card reveal" style="transition-delay: 0.4s;">
+                        <div class="service-icon">
+                            <i class="ph ph-briefcase"></i>
+                        </div>
+                        <h3>Microcrédito Empresarial</h3>
+                        <p>Impulsa tu negocio con capital de trabajo y asesoría financiera especializada para pymes.</p>
+                        <a href="#" class="btn-link">Saber más <i class="ph ph-caret-right"></i></a>
+                    </div>
+
+                    <div class="service-card reveal" style="transition-delay: 0.5s;">
+                        <div class="service-icon">
+                            <i class="ph ph-shield-check"></i>
+                        </div>
+                        <h3>Microseguros</h3>
+                        <p>Protege lo que más valoras. Cobertura en salud, vida y bienes materiales a precios
+                            accesibles.</p>
+                        <a href="#" class="btn-link">Saber más <i class="ph ph-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="benefits section">
+            <div class="container benefits-container">
+                <div class="benefits-content reveal">
+                    <span class="badge">Por qué elegirnos</span>
+                    <h2>Beneficios exclusivos para nuestros asociados</h2>
+                    <p>Ser parte de COOTRAMUPASTO significa acceder a un mundo de ventajas pensadas para tu bienestar
+                        integral.</p>
+
+                    <ul class="benefits-list">
+                        <li>
+                            <div class="benefit-icon"><i class="ph ph-trend-up"></i></div>
+                            <div class="benefit-text">
+                                <h4>Mejores Tasas</h4>
+                                <p>Rendimientos superiores en ahorros y tasas más bajas en créditos frente a la banca
+                                    tradicional.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-icon"><i class="ph ph-users-three"></i></div>
+                            <div class="benefit-text">
+                                <h4>Fondo de Solidaridad</h4>
+                                <p>Apoyo económico en situaciones de calamidad, salud o necesidades apremiantes.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-icon"><i class="ph ph-ticket"></i></div>
+                            <div class="benefit-text">
+                                <h4>Convenios Comerciales</h4>
+                                <p>Descuentos en establecimientos de salud, educación, recreación y turismo.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-4">Afiliarme ahora</a>
+                </div>
+                <div class="benefits-image reveal" style="transition-delay: 0.2s;">
+                    <div class="glass-card">
+                        <div class="glass-icon"><i class="ph-fill ph-star"></i></div>
+                        <h3>Experiencia Premium</h3>
+                        <p>Atención personalizada y plataformas digitales de última generación.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <img src="./assets/images/hero.png" alt="Personas disfrutando beneficios"
+                        class="rounded-image shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="news section bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge">Actualidad</span>
+                    <h2>Noticias y Eventos</h2>
+                    <p>Mantente informado sobre las últimas novedades de tu cooperativa.</p>
+                </div>
+
+                <div class="news-grid">
+                    <article class="news-card reveal">
+                        <div class="news-image placeholder-img-1"></div>
+                        <div class="news-content">
+                            <span class="news-date">10 Jun, 2026</span>
+                            <span class="news-category">Eventos</span>
+                            <h3>Asamblea General Ordinaria 2026</h3>
+                            <p>Conozca los resultados y las decisiones tomadas durante nuestra última asamblea con la
+                                participación de delegados.</p>
+                            <a href="#" class="btn-link">Leer artículo <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card reveal" style="transition-delay: 0.1s;">
+                        <div class="news-image placeholder-img-2"></div>
+                        <div class="news-content">
+                            <span class="news-date">28 May, 2026</span>
+                            <span class="news-category">Educación</span>
+                            <h3>Nuevo programa de educación financiera</h3>
+                            <p>Lanzamos cursos gratuitos para asociados sobre manejo de presupuesto y ahorro inteligente
+                                para el hogar.</p>
+                            <a href="#" class="btn-link">Leer artículo <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card reveal" style="transition-delay: 0.2s;">
+                        <div class="news-image placeholder-img-3"></div>
+                        <div class="news-content">
+                            <span class="news-date">15 May, 2026</span>
+                            <span class="news-category">Innovación</span>
+                            <h3>Actualización de nuestra App Móvil</h3>
+                            <p>Ahora puedes realizar transferencias interbancarias y pago de servicios públicos
+                                directamente desde tu celular.</p>
+                            <a href="#" class="btn-link">Leer artículo <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge">Testimonios</span>
+                    <h2>Historias de Éxito</h2>
+                    <p>Lo que dicen nuestros asociados sobre nosotros.</p>
+                </div>
+
+                <div class="testimonial-slider reveal">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                            <p class="quote-text">"Gracias al crédito hipotecario de COOTRAMUPASTO, por fin pudimos
+                                tener nuestra casa propia. El proceso fue rápido y la asesoría excepcional."</p>
+                            <div class="author">
+                                <div class="author-avatar avatar-1">MV</div>
+                                <div class="author-info">
+                                    <h4>María Vargas</h4>
+                                    <span>Asociada desde 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                            <p class="quote-text">"El apoyo para mi emprendimiento ha sido fundamental. No solo me
+                                dieron el crédito, sino capacitación financiera que me ayudó a crecer."</p>
+                            <div class="author">
+                                <div class="author-avatar avatar-2">CR</div>
+                                <div class="author-info">
+                                    <h4>Carlos Rodríguez</h4>
+                                    <span>Microempresario</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                            <p class="quote-text">"Llevo ahorrando 10 años aquí y la rentabilidad siempre es mejor que
+                                en un banco tradicional. Confío plenamente en la cooperativa."</p>
+                            <div class="author">
+                                <div class="author-avatar avatar-3">AL</div>
+                                <div class="author-info">
+                                    <h4>Ana López</h4>
+                                    <span>Docente Pensionada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button class="slider-btn" id="prevSlide"><i class="ph ph-caret-left"></i></button>
+                        <div class="slider-dots" id="sliderDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slider-btn" id="nextSlide"><i class="ph ph-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-light">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h2>Comunícate con nosotros</h2>
+                        <p>Estamos aquí para resolver tus dudas y ayudarte en cada paso.</p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="icon-box"><i class="ph ph-map-pin"></i></div>
+                                <div>
+                                    <h4>Oficina Principal</h4>
+                                    <p>Av. Principal #123-45, Centro Comercial Plaza Financiera, Piso 2.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box"><i class="ph ph-phone"></i></div>
+                                <div>
+                                    <h4>Líneas de Atención</h4>
+                                    <p>Nacional: 01 8000 123 456<br>WhatsApp: +57 300 123 4567</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box"><i class="ph ph-envelope-simple"></i></div>
+                                <div>
+                                    <h4>Correo Electrónico</h4>
+                                    <p>servicioalcliente@cootramupasto.coop</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box"><i class="ph ph-clock"></i></div>
+                                <div>
+                                    <h4>Horario de Atención</h4>
+                                    <p>Lunes a Viernes: 8:00 AM - 5:00 PM<br>Sábados: 9:00 AM - 12:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container reveal" style="transition-delay: 0.2s;">
+                        <form id="contactForm" class="contact-form">
+                            <h3>Envíanos un mensaje</h3>
+                            <div class="form-group">
+                                <label for="name">Nombre Completo</label>
+                                <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required>
+                                <span class="error-message">Por favor ingresa tu nombre.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                                <span class="error-message">Ingresa un correo electrónico válido.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Selecciona un asunto...</option>
+                                    <option value="afiliacion">Información de Afiliación</option>
+                                    <option value="credito">Solicitud de Crédito</option>
+                                    <option value="ahorro">Cuentas de Ahorro</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <span class="error-message">Selecciona un asunto.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="4" placeholder="¿En qué te podemos ayudar?"
+                                    required></textarea>
+                                <span class="error-message">El mensaje no puede estar vacío.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Enviar Mensaje <i class="ph ph-paper-plane-tilt"></i>
+                            </button>
+                            <div id="formSuccess" class="form-success-msg" style="display: none;">
+                                <i class="ph-fill ph-check-circle"></i> ¡Mensaje enviado con éxito! Nos contactaremos
+                                pronto.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <img src="./assets/images/logo.png" alt="COOTRAMUPASTO Logo"
+                        style="filter: brightness(0) invert(1);">
+                    <span class="logo-text text-white">COOTRAMUPASTO</span>
+                </a>
+                <p class="footer-desc">Construyendo juntos un futuro próspero y solidario. Entidad cooperativa vigilada
+                    por la Superintendencia de Economía Solidaria.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="ph-fill ph-twitter-logo"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#about">Nuestra Historia</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#benefits">Beneficios</a></li>
+                    <li><a href="#news">Noticias</a></li>
+                    <li><a href="#">Simulador de Crédito</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal y Transparencia</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Protección de Datos (Habeas Data)</a></li>
+                    <li><a href="#">SARLAFT</a></li>
+                    <li><a href="#">Estatutos de la Cooperativa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Boletín Informativo</h4>
+                <p>Suscríbete para recibir noticias y ofertas especiales.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary"><i class="ph ph-paper-plane-right"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 COOTRAMUPASTO. Todos los derechos reservados.</p>
+                <div class="vigilado">
+                    <p>VIGILADO SUPERSOLIDARIA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
